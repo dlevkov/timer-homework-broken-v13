@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TaskContainerComponent DOM should render tasks$ 1`] = `
+<div
+  id="root3"
+>
+  <mat-card
+    class="mat-card mat-focus-indicator"
+  >
+    <app-task-presenter>
+      <p>
+        {
+  "id": 1,
+  "name": "test1",
+  "buttonText": "pause",
+  "timer": {}
+}
+      </p>
+    </app-task-presenter>
+    <app-task-presenter>
+      <p>
+        {
+  "id": 2,
+  "name": "test2",
+  "buttonText": "pause",
+  "timer": {}
+}
+      </p>
+    </app-task-presenter>
+    <app-task-presenter>
+      <p>
+        {
+  "id": 3,
+  "name": "test3",
+  "buttonText": "pause",
+  "timer": {}
+}
+      </p>
+    </app-task-presenter>
+    
+  </mat-card>
+  <mat-card
+    class="mat-card mat-focus-indicator"
+  >
+    <mat-card-title
+      class="mat-card-title"
+    >
+       Total: 00:01 
+    </mat-card-title>
+  </mat-card>
+</div>
+`;
+
+exports[`TaskContainerComponent DOM should render totalTime$ 1`] = `
+<div
+  id="root2"
+>
+  <mat-card
+    class="mat-card mat-focus-indicator"
+  >
+    
+  </mat-card>
+  <mat-card
+    class="mat-card mat-focus-indicator"
+  >
+    <mat-card-title
+      class="mat-card-title"
+    >
+       Total: 00:35 
+    </mat-card-title>
+  </mat-card>
+</div>
+`;

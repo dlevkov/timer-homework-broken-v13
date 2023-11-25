@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TaskPresenterComponent should render task 1`] = `
+<div
+  id="root1"
+>
+  <mat-card
+    class="mat-card mat-focus-indicator row"
+  >
+    <div
+      class="input-name"
+    >
+      some name
+    </div>
+    <p>
+      10
+    </p>
+    <button
+      mat-fab=""
+    >
+      <mat-icon
+        aria-hidden="true"
+        class="mat-icon notranslate material-icons mat-icon-no-color"
+        data-mat-icon-type="font"
+        role="img"
+      >
+        pause
+      </mat-icon>
+    </button>
+  </mat-card>
+</div>
+`;

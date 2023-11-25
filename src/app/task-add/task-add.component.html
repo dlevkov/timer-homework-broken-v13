@@ -1,0 +1,30 @@
+<form [formGroup]="form" novalidate (ngSubmit)="submitHandler(form.value.text)">
+  <mat-card class="add-card">
+    <mat-card-content>
+      <div class="row">
+        <mat-form-field>
+          <input matInput placeholder="New Task" formControlName="text" />
+          <mat-error *ngIf="form.controls['text'].hasError('required')">
+            Minimal text is <strong>required</strong>
+          </mat-error>
+        </mat-form-field>
+        <div *ngIf="form.get('text')?.status === 'PENDING'">Checking...</div>
+        <div
+          *ngIf="
+            form.get('text')?.errors && form.get('text')?.errors['nameTaken']
+          "
+        >
+          😢 Oh noes, this task is already exists!
+        </div>
+        <button
+          color="primary"
+          mat-raised-button
+          [disabled]="!form.valid"
+          type="submit"
+        >
+          Add
+        </button>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</form>

@@ -1,0 +1,7 @@
+<mat-card class="row">
+  <div class="input-name">{{ task.name }}</div>
+  <p>{{ task.timer | async | minuteSeconds }}</p>
+  <button mat-fab (click)="click()">
+    <mat-icon>{{ task.buttonText }}</mat-icon>
+  </button>
+</mat-card>
