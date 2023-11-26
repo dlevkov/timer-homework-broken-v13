@@ -1,21 +1,20 @@
-# DenisTestPrjTimer
+# timer-homework-broken
 
-## Current build status: 
-[![Build Status](https://travis-ci.org/dlevkov/timet-test-prj.svg?branch=master)](https://travis-ci.org/dlevkov/timet-test-prj) [![Greenkeeper badge](https://badges.greenkeeper.io/dlevkov/timet-test-prj.svg)](https://greenkeeper.io/)
-
-*** 
 ## Deployed site
 
 Fully working example can be found [here](https://arielbar.github.io/timer-homework-broken-v13/)
 
-***
+---
+
 ### Requirements
 
 #### Please create an app for managing tasks.
- The user can input a text and click Add
+
+The user can input a text and click Add
+
 - A new task is added with the title, and 00:00 time, and a play button.
 - Clicking Play will play this task: the timer will start running, and the icon will change to a pause icon.
- Also - any other running task will be paused.
+  Also - any other running task will be paused.
 - Clicking Pause will pause the task.
 - The total time is always updated.
 - Please implement the redux state, actions and reducers. If you have time - implement the UI as well using >React / Angular (no need for fancy HTML/CSS).
