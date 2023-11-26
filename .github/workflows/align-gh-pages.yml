@@ -11,7 +11,5 @@ jobs:
   align-branch:
     runs-on: ubuntu-latest
     steps:
-      - run: git checkout main
-      - run: git pull
       - run: git checkout gh-pages
-      - run: git merge main
+      - run: git pull origin main
