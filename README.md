@@ -16,9 +16,19 @@ Fully working example can be found [here](https://arielbar.github.io/timer-homew
 
 ---
 
-### Requirements
+## Requirements
 
-#### Please create an app for managing tasks.
+### Tasks to be done
+
+- known bugs should be fixed.
+- unit tests should pass.
+- `//FIXME:` comments should be fixed.
+- any additional performance improvements - BONUS!
+- clean code - BONUS!
+- additional unit tests - HUGE BONUS!
+- **create PR for review**.
+
+#### This is example of working application.
 
 The user can input a text and click Add
 
@@ -30,3 +40,14 @@ The user can input a text and click Add
 - Please implement the redux state, actions and reducers. If you have time - implement the UI as well using >React / Angular (no need for fancy HTML/CSS).
 
 ![alt](https://cloud.githubusercontent.com/assets/889418/23171775/299f5252-f85c-11e6-8f1c-5e66037bf5fa.png)
+
+### Known Bugs
+
+- while adding a new task, should be capitalized, but it is not, while adding another task, the previous became capitalized. another way to reproduce is to press play&stop.
+  ![](./docs/bug%201.png)
+  'AAAA' is capitalized, 'bbbb' should be capitalized too.
+
+---
+
+- task name should be unique.
+  ![](./docs/bug%202.png)

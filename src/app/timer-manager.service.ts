@@ -12,9 +12,7 @@ export class TimerManagerService {
     isRunning: boolean;
   }[] = [];
   constructor(private ngZone: NgZone) {
-    this.ngZone.runOutsideAngular(() => {
-      this.runTimers();
-    });
+    this.runTimers(); //FIXME: can be a performance issue
   }
 
   getTimer(id: number): Observable<number> {
