@@ -1,0 +1,17 @@
+# Sample workflow for building and deploying a Jekyll site to GitHub Pages
+name: Deploy Jekyll with GitHub Pages dependencies preinstalled
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["main"]
+
+jobs:
+  # align gh-pages into main branch
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: git checkout main
+      - run: git pull
+      - run: git checkout gh-pages
+      - run: git merge main
