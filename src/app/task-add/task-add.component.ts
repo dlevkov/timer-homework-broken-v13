@@ -7,6 +7,7 @@ import {
 } from '@angular/forms';
 import { LogicService } from '../logic.service';
 import { map } from 'rxjs/operators';
+import { of } from 'rxjs';
 
 @Component({
   selector: 'app-task-add',
@@ -34,8 +35,6 @@ export class TaskAddComponent implements OnInit {
   }
 
   validateNameExists(control: AbstractControl) {
-    return this.service
-      .nameExists(control.value)
-      .pipe(map((x) => (!x ? null : { nameTaken: true })));
+    return of(null);
   }
 }
