@@ -1,5 +1,15 @@
 # timer-homework-broken
 
+## How to test
+
+Please run this command:  
+`npm test`
+
+## How to deploy
+
+Please run this command:  
+`ng deploy --base-href=/timer-homework-broken-v13/`
+
 ## Deployed site
 
 Fully working example can be found [here](https://arielbar.github.io/timer-homework-broken-v13/)
