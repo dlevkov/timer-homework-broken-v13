@@ -12,10 +12,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - name: Git checkout
-      uses: actions/checkout@v2
-      with:
+       uses: actions/checkout@v2
+       with:
         fetch-depth: '0'
-    - name: git
-      run: |
+     - name: git
+       run: |
         git checkout gh-pages
         git pull origin main
