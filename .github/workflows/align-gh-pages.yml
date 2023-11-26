@@ -8,7 +8,7 @@ on:
 
 jobs:
   # align gh-pages into main branch
-  build:
+  align-branch:
     runs-on: ubuntu-latest
     steps:
       - run: git checkout main
