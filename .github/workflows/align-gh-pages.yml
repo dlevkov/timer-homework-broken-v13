@@ -11,5 +11,11 @@ jobs:
   align-branch:
     runs-on: ubuntu-latest
     steps:
-      - run: git checkout gh-pages
-      - run: git pull origin main
+     - name: Git checkout
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: '0'
+    - name: git
+      run: |
+        git checkout gh-pages
+        git pull origin main
