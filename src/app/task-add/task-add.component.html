@@ -3,7 +3,7 @@
     <mat-card-content>
       <div class="row">
         <mat-form-field>
-          <input matInput placeholder="New Task" formControlName="text" />
+          <input matInput placeholder="Create Task" formControlName="text" />
           <mat-error *ngIf="form.controls['text'].hasError('required')">
             Minimal text is <strong>required</strong>
           </mat-error>
