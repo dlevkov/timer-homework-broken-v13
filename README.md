@@ -47,6 +47,9 @@ The user can input a text and click Add
   ![](./docs/bug%201.png)
   'AAAA' is capitalized, 'bbbb' should be capitalized too.
 
+  ## How send task back?
+  There is no option to create a branch from original repo, pls fork and open PR from fork
+
 ---
 
 - task name should be unique.
