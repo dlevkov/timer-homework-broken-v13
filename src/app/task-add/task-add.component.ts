@@ -7,7 +7,7 @@ import {
 } from '@angular/forms';
 import { LogicService } from '../logic.service';
 import { map } from 'rxjs/operators';
-import { of } from 'rxjs';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-task-add',
@@ -16,7 +16,9 @@ import { of } from 'rxjs';
 })
 export class TaskAddComponent implements OnInit {
   form: FormGroup;
+
   constructor(private fb: FormBuilder, private service: LogicService) {}
+
   ngOnInit(): void {
     this.form = this.fb.group({
       text: [
@@ -26,15 +28,20 @@ export class TaskAddComponent implements OnInit {
       ],
     });
   }
+
   submitHandler(text: string) {
     this.service.addTask(text);
     this.resetForm();
   }
+
   private resetForm() {
     this.form.reset();
   }
 
-  validateNameExists(control: AbstractControl) {
-    return of(null);
+  validateNameExists(control: AbstractControl): Observable<{ nameExists: boolean } | null> {
+    // Solution for unique name, use nameExists method from LogicService and return relevant error
+    return this.service.nameExists((control.value as string).toLocaleLowerCase()).pipe(
+      map((exists: boolean) => exists ? { nameExists: true } : null)
+    );
   }
 }

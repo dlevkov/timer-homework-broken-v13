@@ -11,7 +11,7 @@
         <div *ngIf="form.get('text')?.status === 'PENDING'">Checking...</div>
         <div
           *ngIf="
-            form.get('text')?.errors && form.get('text')?.errors['nameTaken']
+            form.get('text')?.errors && form.get('text')?.errors['nameExists']
           "
         >
           😢 Oh noes, this task is already exists!
